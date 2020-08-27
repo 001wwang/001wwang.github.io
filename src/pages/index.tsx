@@ -5,14 +5,15 @@ import styles from "../components/index.module.css"
 import linkedin from "../assets/icons/linkedin.svg"
 import github from "../assets/icons/github.svg"
 import mail from "../assets/icons/mailbox.svg"
-import headshot from "../assets/head.png"
+import headshot from "../assets/will.svg"
 
 export default function Home() {
   return (
     <Container>
+      <title>Will</title>
       <div className={styles.header}>
         <Title headerText="Hey, I'm" />
-        <Title headerText="Will Wang" />
+        <Title headerText=" Will Wang" />
         <img className={styles.headshot} src={headshot} />
       </div>
       <div>
@@ -39,7 +40,7 @@ export default function Home() {
             <EmphList
               items={[
                 ["🤝", "AWS Marketplace", "@ Amazon"],
-                ["🏦", "Exchange Infra", "@ Belvedere"],
+                ["🏦", "Exchange Infra", "@ Belvedere Trading"],
                 ["📊", "Research Infra", "@ DRW"],
               ]}
             />
