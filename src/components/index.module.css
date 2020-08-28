@@ -16,14 +16,6 @@
     margin-right: auto;
 }
 
-.sidebar {
-    margin: 3rem;
-    max-width: 200px;
-    justify-content: right;
-}
-
-img.sidebar {
-    height: 50px;
-    width: 50px;
-    margin: 1rem;
+.blurb {
+    margin-bottom: 2rem;
 }

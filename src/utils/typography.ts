@@ -1,15 +1,13 @@
 import Typography from 'typography'
 
 const typography = new Typography({
-    baseFontSize: '18px',
+    baseFontSize: '16px',
     baseLineHeight: 1.5,
     headerFontFamily: [
-        'Montserrat',
-        'sans-serif'
+        'Inter',
     ],
     bodyFontFamily: [
-        'Montserrat',
-        'sans-serif'
+        'Inter'
     ]
 })
 

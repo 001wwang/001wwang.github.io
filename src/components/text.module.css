@@ -19,7 +19,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: rainbow-text-animation-rev 0.5s ease forwards;
+    animation: rainbow-text-animation-rev 1s ease forwards;
 
     cursor: pointer;
 }
@@ -63,7 +63,8 @@
 }
 
 .subheader {
-    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
     text-shadow: -2px -1px #FF398C;
 }
 

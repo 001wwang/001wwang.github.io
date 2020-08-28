@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./text.module.css"
+import EmphItem from "../utils/emphitem"
 
 export { Title, SubHeader, Emph, EmphList }
 
@@ -30,20 +31,26 @@ function SubHeader(props) {
   return <h3 className={styles.subheader}>{props.headerText}</h3>
 }
 
-function EmphList(props) {
-    if (props.hasOwnProperty("items")) {
-        return (
-            <ul className={styles.emphlist}>
-              {props.items.map(item => (
-                <li>
-                  {" "}
-                  <span className={styles.emote}> {item[0]} </span>{" "}
-                  <Emph text={item[1]} col="#FE3A8F" /> {item[2]}{" "}
-                </li>
-              ))}
-            </ul>
-          )
-    } else {
-        return <ul></ul>
-    }
+const ConditionalWrapper = ({ cond, wrap, children }) => {
+  return cond ? wrap(children) : children
+}
+
+function EmphList(props: { items: EmphItem[] }) {
+  return (
+    <ul className={styles.emphlist}>
+      {props.items.map(item => (
+        <li>
+          {" "}
+          <span className={styles.emote}> {item.emoji} </span>{" "}
+          <ConditionalWrapper
+            cond={item.link != ""}
+            wrap={c => <a href={item.link}>{c}</a>}
+          >
+            <Emph text={item.main} col="#FE3A8F" />
+          </ConditionalWrapper>
+          {" " + item.secondary}{" "}
+        </li>
+      ))}
+    </ul>
+  )
 }
