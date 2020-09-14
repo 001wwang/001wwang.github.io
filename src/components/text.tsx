@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./text.module.css"
+import styles from "../styles/text.module.css"
 import EmphItem from "../utils/emphitem"
 
 export { Title, SubHeader, Emph, EmphList }

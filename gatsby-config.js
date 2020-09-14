@@ -21,6 +21,14 @@ module.exports = {
           families: ['Inter']
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `minis`,
+        path: `${__dirname}/static/static-minis`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
   ],
 }

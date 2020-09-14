@@ -2,7 +2,7 @@ import React from "react"
 import { Title, SubHeader, Emph, EmphList } from "../components/text"
 import SideBarLinks from "../components/links"
 import Container from "../components/container"
-import styles from "../components/index.module.css"
+import styles from "../styles/index.module.css"
 import headshot from "../assets/will.svg"
 import EmphItem from "../utils/emphitem"
 
@@ -115,6 +115,12 @@ export default function Home() {
                   "Leaderboard Design",
                   "Figma",
                   "https://www.figma.com/proto/X4Bi764c8KGVoHQRfQJau6/Leaderboard?node-id=1%3A2&scaling=scale-down"
+                ),
+                new EmphItem(
+                  "🖼",
+                  "Minis",
+                  "HTML/CSS/JavaScript",
+                  "/minis"
                 ),
                 new EmphItem("🤫", "more coming soon"),
               ]}

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./links.module.css"
+import styles from "../styles/links.module.css"
 import linkedin from "../assets/icons/linkedin.svg"
 import github from "../assets/icons/github.svg"
 import mail from "../assets/icons/mailbox.svg"
