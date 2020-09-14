@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Inter';
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background: darksalmon;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+
+    /* add shadow */
+    border-radius: 16px;
+    background: white;
+    box-shadow: -1rem 0 1.5rem rgb(230, 230, 230);
+
+    transition: 0.2s;
+}
+
+.card-body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    margin: 3rem 0 0;
+}
+
+.card-photo img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.card-header {
+    margin-bottom: auto;
+}
+
+.card:hover {
+    transform: translateY(-1rem)
+}
+
+.card:hover~.card {
+    transform: translateX(2rem)
+}
+
+.card:not(:first-child) {
+    margin-left: -2rem;
+}
